@@ -25,8 +25,8 @@ function cardOneClick(target){
                 const discountPrice = document.getElementById('discount-price')
                 const getDiscount = total * (discount / 100);
                 const getDiscountPrice = total - getDiscount;
-                discountField.innerText = getDiscount;
-                discountPrice.innerText = getDiscountPrice;
+                discountField.innerText = getDiscount.toFixed(2);
+                discountPrice.innerText = getDiscountPrice.toFixed(2);
             })
     
             }else{
